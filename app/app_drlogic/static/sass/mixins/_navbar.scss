@@ -1,0 +1,65 @@
+@mixin nav-color( $name, $color, $pos )
+{
+	&.#{$name} {
+
+		.container {
+			background-position: $pos;
+		}
+
+		&.navbar-default {
+			background-color: $color;
+
+			@media (min-width: $screen-sm-min) {
+				background-color: #fff;
+			}
+
+			.navbar-toggle:hover,
+			.navbar-toggle:focus {
+				background-color: darken( $color, 10% );
+			}
+		}
+		li {
+
+			&.active-dropdown {
+				a.dropdown-toggle {
+				color: $color;
+
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+
+			&.active {
+				a {
+					color: #fff;
+					@media (min-width: $screen-sm-min) {
+						color: $color;
+					}
+				}
+			}
+
+			a {
+				&:after { background-color: $color; }
+				&:hover {
+					color: lighten($color, 35%);
+					@media (min-width: $screen-sm-min) {
+						color: $color;
+					}
+				}
+			}
+		}
+
+		.navbar-collapse {
+			background-color: darken( $color, 10% );
+			@media (min-width: $screen-sm-min) {
+				background-color: transparent;
+			}
+
+		}
+
+		.mail {
+			color: $color;
+		}
+	}
+}

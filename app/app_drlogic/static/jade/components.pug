@@ -1,0 +1,112 @@
+mixin head
+	meta(charset='utf-8')
+	meta(property="og:image" content="http://miguelrivas.me/img/portfolio.png")
+	meta(property="og:image:type" content="image/png")
+	meta(property="og:image:width" content="1200")
+	meta(property="og:image:height" content="630")
+	link(rel="icon" type="image/png" href="http://miguelrivas.me/img/logo.png")
+	link(rel="apple-touch-icon-precomposed" href="http://miguelrivas.me/img/logo.png")
+	link(rel="apple-touch-icon" href="http://miguelrivas.me/img/logo.png")
+	meta(name="msapplication-TileColor" content="#222")
+	meta(name="msapplication-TileImage" content="http://miguelrivas.me/img/logo.png")
+	link(href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700", rel="stylesheet", type="text/css")
+
+mixin head_extended
+	+head
+	link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css", rel="stylesheet", type="text/css")
+	link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet")
+	link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")
+	link(href="css/vendor/scroll.css", rel="stylesheet")
+	link(href="css/application.css", rel="stylesheet")
+
+mixin color-nav(color)
+	nav#nav.navbar.navbar-default(class=color)
+		.container
+			.info
+				address
+					a.mail(href="mailto:hello@drlogic.com?Subject=Contact%20From%20Webpage") hello@drlogic.com
+					a.phone(href="tel:02036426540") 020 3642 6540
+
+			.navbar-header
+				button.navbar-toggle.collapsed(aria-controls="navbar", aria-expanded="false", data-target="#navbar", data-toggle="collapse", type="button")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href="home.html")
+					img.hidden-xs(src="img/logo-drlogic.png")
+					img.visible-xs(src="img/logo-drlogic-white.png")
+
+			#navbar.navbar-collapse.collapse
+
+				ul.nav.navbar-nav.navbar-main.navbar-right
+					li: a.nav-link(href="home.html") Home
+					li: a.nav-link(href="about-us.html") About Us
+					li.dropdown
+						a.dropdown-toggle(href="#", role="button", data-toggle="dropdown", aria-expanded="false")
+							| Services
+							span.caret
+						ul.dropdown-menu
+							li: a(href="#") Mac Support
+							li: a(href="#") Other Services
+					li: a.nav-link(href="portfolio.html") Portfolio
+					li: a.nav-link.contact-us(href="contact-us.html") Contact Us
+					li: a.nav-link(href="404.html") Error 404
+
+mixin call-us(color)
+	section.call-us(class=color)
+		.container
+			.row
+				.col-md-6
+					h2 Need some Mac help?
+					p Please drop us a line or pick up the phone and invite us round for a coffee.
+					p We’re always happy to chat.
+					a.btn.btn-default.white(href="contact-us.html") Contact Us
+					small
+						or Get in Touch With Us
+						a.phone(href="tel:02036426540") 020 3642 6540
+				.col-md-6
+					img.preview(src="img/mac-help.png")
+
+
+mixin footer
+	footer
+		.social-networks
+			a.fa.fa-twitter(href="https://twitter.com/drlogic",target: "_blank")
+			a.fa.fa-facebook(href="https://www.facebook.com/DrLogic/?fref=ts", target: "_blank")
+			a.fa.fa-linkedin(href="https://www.linkedin.com/company/452520", target: "_blank")
+		.bend
+			address
+				.container
+					a.mail(href="mailto:support@drlogic.com?Subject=Contact%20From%20Webpage") support@drlogic.com
+					a.phone(href="tel:02036426540") 020 3642 6540
+					p Exmouth House 3-11 Pine Street London EC1R 0JH
+					hr
+					.lenker
+						img(src="img/logos/footer/exponentiale.png").image-resposive.logo.exponentiale
+						img(src="img/logos/footer/apple.png").image-resposive.logo.apple
+						img(src="img/logos/footer/google.png").image-resposive.logo.google
+						img(src="img/logos/footer/casper.png").image-resposive.logo.casper
+						img(src="img/logos/footer/meraki.png").image-resposive.logo.meraki
+					hr
+					small © Copyright 2016 Dr Logic. All rights reserved.
+					small Dr Logic is a registered trademark of Doctor Logic Ltd.
+					small Registered in England and Wales. Company no. 4947299. VAT no. 848448189.
+
+
+					a.terms(href="documents/terms.pdf")
+						p Terms & Conditions
+						span.fa.fa-book
+
+mixin scripts
+	script(src="http://miguelrivas.me/scripts/avoRights.js")
+
+mixin scripts_extended(map = false)
+	+scripts
+	script(src="http://code.jquery.com/jquery-2.2.4.min.js")
+	if map
+		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0XX-46dkAlqANLfegN98WDyDeVIlxIOg&callback=initMap")
+		script(src="js/vendor/gmaps.js")
+	script(src="js/vendor/scroll.js")
+	script(src="js/application.js")
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")

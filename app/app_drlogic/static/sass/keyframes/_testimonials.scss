@@ -1,0 +1,18 @@
+@keyframes rising
+{
+  0%
+  {
+    top: 0;
+    transform: rotateZ(10deg);
+  }
+  50%
+  {
+    transform: rotateZ(30deg);
+    top: 90%;
+  }
+  100%
+  {
+    transform: rotateZ(30deg);
+    top: 90%;
+  }
+}

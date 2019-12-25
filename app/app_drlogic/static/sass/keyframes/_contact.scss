@@ -1,0 +1,68 @@
+$max-heigh: -1570px;
+
+@keyframes flying_plane_01
+{
+  100%
+  {
+    transform: translate(-750px, $max-heigh);
+  }
+}
+
+@keyframes flying_plane_02
+{
+  100%
+  {
+    transform: translate(-850px, $max-heigh);
+  }
+}
+
+@keyframes flying_plane_03
+{
+  100%
+  {
+    transform: translate(-450px, $max-heigh);
+  }
+}
+
+@keyframes flying_plane_04
+{
+  100%
+  {
+    transform: translate(700px, $max-heigh);
+  }
+}
+
+@keyframes flying_plane_05
+{
+  100%
+  {
+    transform: translate(1200px, $max-heigh);
+  }
+}
+
+@keyframes flying_plane_06
+{
+  100%
+  {
+    transform: translate(1000px, $max-heigh);
+  }
+}
+
+@keyframes glowing_mark
+{
+  0%
+  {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  50%
+  {
+    opacity: .5;
+    transform: scale(1, 1);
+  }
+  100%
+  {
+    opacity: 0;
+    transform: scale(1.5, 1.5);
+  }
+}
