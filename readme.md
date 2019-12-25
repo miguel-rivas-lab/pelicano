@@ -1,32 +1,43 @@
-** Install Python 3 and related packages
-$ sudo apt-get python3 python3-pip virtualenv
+------------------------------------------------
+# Setting the app for the first time
+------------------------------------------------
 
-** Creating environtment
-$ virtualenv -p python3 .
+#### Install Python 3 and related packages
+`sudo apt-get python3 python3-pip virtualenv`
 
-** Activate virtual environtment
-$ source bin/activate
+------------------------------------------------
+# Creating the project
+------------------------------------------------
+#### Creating virtual environment
+`virtualenv -p python3 .`
 
-** Install Django
-$ pip3 install django
+#### Activate virtual environment
+`source bin/activate`
 
-** Start Project
-$ django-admin startproject app
+#### Install Django
+`pip3 install django`
 
-** move to the new app
-$ cd app
+#### Start new project
+`django-admin startproject app`
 
-** Set DB
-$ python3 manage.py migrate
+#### Move to the new app folder
+`cd app`
 
-** Create users
-$ python3 manage.py createsuperuser
+#### Set database
+`python3 manage.py migrate`
 
-** Create New Apps
-$ python3 manage.py startapp app_drlogic
+#### Create user
+`python3 manage.py createsuperuser`
 
-** Run server
-$ python3 manage.py runserver
+#### Create new app
+`python3 manage.py startapp app_drlogic`
 
-** URL
-http://localhost:8000/
+------------------------------------------------
+# Daily tasks
+------------------------------------------------
+
+#### Run server
+`python3 manage.py runserver`
+
+#### URL
+`http://localhost:8000/`
