@@ -15,7 +15,7 @@
 `source bin/activate`
 
 #### Install Django
-`pip3 install django`
+`pip install django`
 
 #### Start new project
 `django-admin startproject app`
