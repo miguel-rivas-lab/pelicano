@@ -33,6 +33,16 @@
 `python3 manage.py startapp app_drlogic`
 
 ------------------------------------------------
+# Installing webpack
+------------------------------------------------
+
+#### Install webpack and webpack command line
+npm i webpack webpack-cli
+
+#### Create package.json
+npm init -y
+
+------------------------------------------------
 # Daily tasks
 ------------------------------------------------
 
