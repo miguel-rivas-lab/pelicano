@@ -42,6 +42,13 @@ npm i webpack webpack-cli
 #### Create package.json
 npm init -y
 
+#### Installing dev server
+npm i -D webpack-dev-server
+
+npm start
+
+npm i -D nodemon
+
 ------------------------------------------------
 # Daily tasks
 ------------------------------------------------

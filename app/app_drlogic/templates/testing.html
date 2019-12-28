@@ -1,6 +1,11 @@
 {% extends 'layout_base.html' %}
+{% load static %} 
 
 {% block content %}
 {% include 'component_navbar.html' %}
-<h1>test</h1>
-{% endblock %}
+  <h1>test</h1>
+{% endblock content %}
+
+{% block footer %}
+  <script src="{% static '/js/drlogic-pack.js' %}"></script>
+{% endblock footer %}
