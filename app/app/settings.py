@@ -6,6 +6,8 @@ MAIN_TEMPLATES = os.path.join(BASE_DIR, 'templates')
 DEBUG = True
 ALLOWED_HOSTS = []
 
+print('-' * 50 + ' line 1')
+
 with open(TOKEN_LOCATION) as f:
   SECRET_KEY = f.read().strip()
 
@@ -22,6 +24,8 @@ INSTALLED_APPS = [
   'app_drlogic'
 ]
 
+print('-' * 50 + ' line 2')
+
 MIDDLEWARE = [
   'django.middleware.security.SecurityMiddleware',
   'django.contrib.sessions.middleware.SessionMiddleware',
@@ -31,6 +35,8 @@ MIDDLEWARE = [
   'django.contrib.messages.middleware.MessageMiddleware',
   'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+print('-' * 50 + ' line 3')
 
 ROOT_URLCONF = 'app.urls'
 
@@ -50,6 +56,8 @@ TEMPLATES = [
   },
 ]
 
+print('-' * 50 + ' line 4')
+
 WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
@@ -58,6 +66,8 @@ DATABASES = {
     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
   }
 }
+
+print('-' * 50 + ' line 5')
 
 AUTH_PASSWORD_VALIDATORS = [
   {
@@ -74,6 +84,8 @@ AUTH_PASSWORD_VALIDATORS = [
   },
 ]
 
+print('-' * 50 + ' line 6')
+
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -83,6 +95,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+print('-' * 50 + ' line 7')
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = 'http://127.0.0.1:8080/'
