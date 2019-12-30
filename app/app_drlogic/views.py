@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
 def home_view(request):
-  return render(request, 'drlogic_home.html', {})
+  return render(request, 'drlogic-home.html', {})

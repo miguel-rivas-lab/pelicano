@@ -1,12 +1,15 @@
 {
   "name": "app",
   "version": "1.0.0",
+  "private": true,
   "main": "index.js",
-  "dependencies": {
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
-  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
     "css-loader": "^3.4.0",
     "html-webpack-plugin": "^3.2.0",
     "nodemon": "^2.0.2",
@@ -18,9 +21,5 @@
     "start": "nodemon -w webpack.config.js -x webpack-dev-server",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }
