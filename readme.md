@@ -11,9 +11,6 @@
 #### Creating virtual environment
 `virtualenv -p python3 .`
 
-#### Activate virtual environment
-`source bin/activate`
-
 #### Install Django
 `pip install django`
 
@@ -31,6 +28,12 @@
 
 #### Create new app
 `python3 manage.py startapp app_drlogic`
+
+------------------------------------------------
+# Many node modules
+------------------------------------------------
+
+npm i -D webpack webpack-cli webpack-dev-server style-loader css-loader sass-loader node-sass sass fibers
 
 ------------------------------------------------
 # Installing webpack
@@ -52,6 +55,9 @@ npm i -D nodemon
 ------------------------------------------------
 # Daily tasks
 ------------------------------------------------
+
+#### Activate virtual environment
+`source bin/activate`
 
 #### Run server
 `python3 manage.py runserver`
