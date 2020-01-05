@@ -1,4 +1,4 @@
-#!/home/llmacorn/server/bin/python
+#!/home/llmacorn/ptf/bin/python
 
 import sys
 import getopt

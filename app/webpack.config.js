@@ -1,5 +1,5 @@
 const path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+// var HtmlWebpackPlugin = require('html-webpack-plugin');
 // const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const dir = {
@@ -7,32 +7,36 @@ const dir = {
 	build: path.resolve(__dirname, 'dist')
 };
 
-const pugApps = [
-	{
-		name: "drlogic",
-		views: [
-			"home",
-			"test"
-		]
-	}
-];
+// const pugApps = [
+// 	{
+// 		name: "drlogic",
+// 		views: [
+// 			"home",
+// 			"about",
+// 			"portfolio",
+// 			"contact",
+// 			"services",
+// 			"404",
+// 		]
+// 	}
+// ];
 
-function getTemplateDir(appName, view, ext = "html") {
-	return __dirname + '/app_' + appName + '/templates/' + appName + '-' + view + '.' + ext;
-}
+// function getTemplateDir(appName, view, ext = "html") {
+// 	return __dirname + '/app_' + appName + '/templates/' + appName + '-' + view + '.' + ext;
+// }
 
-function getPugViews() {
-	let result;
-	pugApps.forEach(function(pugApp) {
-		pugApp.views.forEach(function(view) {
-			result += new HtmlWebpackPlugin({
-				filename: getTemplateDir(pugApp.name, view),
-				template: getTemplateDir(pugApp.name, view, "pug")
-			});
-		})
-	});
-	return result;
-}
+// function getPugViews() {
+// 	let result;
+// 	pugApps.forEach(function(pugApp) {
+// 		pugApp.views.forEach(function(view) {
+// 			result += new HtmlWebpackPlugin({
+// 				filename: getTemplateDir(pugApp.name, view),
+// 				template: getTemplateDir(pugApp.name, view, "pug")
+// 			});
+// 		})
+// 	});
+// 	return result;
+// }
 
 module.exports = {
 	mode: 'development',
@@ -47,7 +51,11 @@ module.exports = {
 	}, 
 	plugins: [
 		// new ExtractTextPlugin('css/styles.css'),
-		getPugViews
+		// getPugViews
+		// new HtmlWebpackPlugin({
+		// 	filename: getTemplateDir('drlogic', 'home'),
+		// 	template: getTemplateDir('drlogic', 'home', 'pug'),
+		// })
 	],
 	module: {
 		rules: [
@@ -59,17 +67,23 @@ module.exports = {
 					'sass-loader' // covert scss to css
 				]
 			},
-			{
-				test: /\.pug$/,
-				use: [
-					{
-						loader: 'pug-loader',
-						options: {
-							pretty: true,
-						},
-					},
-				],
-			},
+			// {
+			// 	test: /\.pug$/,
+			// 	use: [
+			// 		{
+			// 			loader: 'pug-loader',
+			// 			options: {
+			// 				pretty: true,
+			// 			},
+			// 		},
+			// 	],
+			// },
+			// {
+			// 	test: /\.(png|svg|jpg|gif)$/,
+			// 	use: [
+			// 		'file-loader',
+			// 	],
+			// },
 		]
 	}
 }
