@@ -1,62 +1,21 @@
 const path = require('path');
-// var HtmlWebpackPlugin = require('html-webpack-plugin');
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const dir = {
 	static: path.resolve(__dirname, 'static'),
 	build: path.resolve(__dirname, 'dist')
 };
 
-// const pugApps = [
-// 	{
-// 		name: "drlogic",
-// 		views: [
-// 			"home",
-// 			"about",
-// 			"portfolio",
-// 			"contact",
-// 			"services",
-// 			"404",
-// 		]
-// 	}
-// ];
-
-// function getTemplateDir(appName, view, ext = "html") {
-// 	return __dirname + '/app_' + appName + '/templates/' + appName + '-' + view + '.' + ext;
-// }
-
-// function getPugViews() {
-// 	let result;
-// 	pugApps.forEach(function(pugApp) {
-// 		pugApp.views.forEach(function(view) {
-// 			result += new HtmlWebpackPlugin({
-// 				filename: getTemplateDir(pugApp.name, view),
-// 				template: getTemplateDir(pugApp.name, view, "pug")
-// 			});
-// 		})
-// 	});
-// 	return result;
-// }
-
 module.exports = {
 	mode: 'development',
 	entry: {
-		'drlogic-pack': dir.static + '/drlogic-imports.js',
+		'drlogic-pack': dir.static + '/app-drlogic.js',
 	},
 	devtool: 'none',
 	output: {
-		filename: 'drlogic-pack.js',
+		filename: 'app-drlogic.js',
 		// filename: 'drlogic-pack-[contentHash].js',
 		path: dir.build,
 	}, 
-	plugins: [
-		// new ExtractTextPlugin('css/styles.css'),
-		// getPugViews
-		// new HtmlWebpackPlugin({
-		// 	filename: getTemplateDir('drlogic', 'home'),
-		// 	template: getTemplateDir('drlogic', 'home', 'pug'),
-		// })
-	],
 	module: {
 		rules: [
 			{
@@ -67,23 +26,6 @@ module.exports = {
 					'sass-loader' // covert scss to css
 				]
 			},
-			// {
-			// 	test: /\.pug$/,
-			// 	use: [
-			// 		{
-			// 			loader: 'pug-loader',
-			// 			options: {
-			// 				pretty: true,
-			// 			},
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	test: /\.(png|svg|jpg|gif)$/,
-			// 	use: [
-			// 		'file-loader',
-			// 	],
-			// },
 		]
 	}
 }
