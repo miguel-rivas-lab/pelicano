@@ -51,16 +51,3 @@ npm i -D webpack-dev-server
 npm start
 
 npm i -D nodemon
-
-------------------------------------------------
-# Daily tasks
-------------------------------------------------
-
-#### Activate virtual environment
-`source bin/activate`
-
-#### Run server
-`python3 manage.py runserver`
-
-#### URL
-`http://localhost:8000/`

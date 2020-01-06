@@ -3,3 +3,4 @@ __pycache__
 dist
 secret_token
 node_modules
+app_readme.md

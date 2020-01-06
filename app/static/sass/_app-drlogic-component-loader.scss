@@ -1,0 +1,9 @@
+aside.loader {
+	background: #2a4a64 url(get-url('loading')) center no-repeat;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	z-index: 20;
+}

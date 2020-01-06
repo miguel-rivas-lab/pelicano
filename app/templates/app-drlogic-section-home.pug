@@ -1,0 +1,66 @@
+extends app-drlogic-layout
+include app-drlogic-components.pug
+
+block body
+	aside.loader
+	+nav
+
+	section#home
+		section.intro
+			.copywrite
+				h1 Mac IT support
+				p We provide Mac IT support for nice companies who like to do things differently.
+				p Established in 2003, we’re passionate about all things Apple.
+				p We have a simple mission: to help our clients to do amazing things with IT.
+
+			+put-img("home-table-mobile", "table-mobile")
+
+			.animation-intro
+				.office
+					.table
+					+put-img("home-hand-03", "hand03 object front")
+					+put-img("home-leg", "leg object front")
+					+put-img("home-guy", "guy object front")
+					+put-img("home-folder", "folder object front")
+					+put-img("home-pointer", "pointer object front")
+					+put-img("home-head", "head object front")
+					+put-img("home-head-02", "head-02 object front")
+					+put-img("home-hand-01", "hand01 object back")
+					+put-img("home-hand-02", "hand02 object back")
+					+put-img("home-hand-04", "hand04 object back")
+					+put-img("home-computer", "pc object")
+
+			.lamp-area.left
+				.lamp
+					.bulb
+			.lamp-area.right
+				.lamp
+					.bulb
+			.wireframe
+
+		section.body
+			.bend
+				.container
+					article
+						.contain
+							+put-img("home-body-it-support")
+							h2 Mac IT support
+							p We’ll work in partnership with you to become your own IT department, proactively helping you improve your IT as well as solving day-to-day issues.
+						a.btn.btn-primary.blue-02(href="about") Meet our team
+
+					article
+						.contain
+							+put-img("home-body-it-consulting")
+							h2 IT services for business
+							p Dr Logic can help your business, by offering impartial advice on everything from phone systems, data backup and storage to email & web hosting, networking and high-speed broadband.
+						a.btn.btn-primary.blue-02(href="#") Find out more
+
+					article
+						.contain
+							+put-img("home-body-it-services")
+							h2 IT projects & consulting
+							p Whatever Mac IT issue your business is facing, we’ll work with you to find a realistic and affordable solution.
+						a.btn.btn-primary.blue-02(href="contact") Contact Us
+
+		+call-us
+		+footer

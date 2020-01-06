@@ -1,0 +1,81 @@
+mixin put-img(image, classes, ext="png")
+	img(src="http://127.0.0.1:8080/static/img/app_drlogic/#{image}.#{ext}", class=classes)
+
+mixin link-doc(doc, classes)
+	a(href="http://127.0.0.1:8080/static/docs/#{doc}", class=classes)
+		p Terms & Conditions
+		span.fa.fa-book
+
+mixin nav(color)
+	nav#nav.navbar.navbar-default(class=color)
+		.container
+			.info
+				address
+					a.mail(href="mailto:hello@drlogic.com?Subject=Contact%20From%20Webpage") hello@drlogic.com
+					a.phone(href="tel:02036426540") 020 3642 6540
+
+			.navbar-header
+				button.navbar-toggle.collapsed(aria-controls="navbar", aria-expanded="false", data-target="#navbar", data-toggle="collapse", type="button")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href="home")
+					+put-img("logo-drlogic", "hidden-xs")
+					+put-img("logo-drlogic-white", "visible-xs")
+			#navbar.navbar-collapse.collapse
+				ul.nav.navbar-nav.navbar-main.navbar-right
+					li: a.nav-link(href="home") Home
+					li: a.nav-link(href="about") About Us
+					li.dropdown
+						a.dropdown-toggle(href="#", role="button", data-toggle="dropdown", aria-expanded="false")
+							| Services
+							span.caret
+						ul.dropdown-menu
+							li: a(href="#") Mac Support
+							li: a(href="#") Other Services
+					li: a.nav-link(href="portfolio") Portfolio
+					li: a.nav-link.contact-us(href="contact") Contact Us
+					li: a.nav-link(href="404") Error 404
+
+mixin call-us(color)
+	section.call-us(class=color)
+		.container
+			.row
+				.col-md-6
+					h2 Need some Mac help?
+					p Please drop us a line or pick up the phone and invite us round for a coffee.
+					p We’re always happy to chat.
+					a.btn.btn-default.white(href="contact") Contact Us
+					small
+						or Get in Touch With Us
+						a.phone(href="tel:02036426540") 020 3642 6540
+				.col-md-6
+					+put-img("mac-help", "preview")
+
+
+mixin footer
+	footer
+		.social-networks
+			a.fa.fa-twitter(href="https://twitter.com/drlogic",target: "_blank")
+			a.fa.fa-facebook(href="https://www.facebook.com/DrLogic/?fref=ts", target: "_blank")
+			a.fa.fa-linkedin(href="https://www.linkedin.com/company/452520", target: "_blank")
+		.bend
+			address
+				.container
+					a.mail(href="mailto:support@drlogic.com?Subject=Contact%20From%20Webpage") support@drlogic.com
+					a.phone(href="tel:02036426540") 020 3642 6540
+					p Exmouth House 3-11 Pine Street London EC1R 0JH
+					hr
+					.lenker
+						+put-img("logos-footer-exponentiale", "image-responsive logo exponentiale")
+						+put-img("logos-footer-apple", "image-responsive logo apple")
+						+put-img("logos-footer-google", "image-responsive logo google")
+						+put-img("logos-footer-casper", "image-responsive logo casper")
+						+put-img("logos-footer-meraki", "image-responsive logo meraki")
+					hr
+					small © Copyright 2016 Dr Logic. All rights reserved.
+					small Dr Logic is a registered trademark of Doctor Logic Ltd.
+					small Registered in England and Wales. Company no. 4947299. VAT no. 848448189.
+
+					+link-doc("terms.pdf", "terms")
