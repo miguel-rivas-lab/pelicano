@@ -1,7 +1,9 @@
 extends app-drlogic-layout
 include app-drlogic-components.pug
+{% load custom_tags %}
 
 block body
+	//- aside.loader
 	+nav
 
 	section#contact
@@ -16,12 +18,12 @@ block body
 						p To find out how we can help you improve the way your business operates and to take the aches and pains out of IT support, please drop Dr Logic a line or pick up the phone.
 
 			.animation-intro
-				img.plane.p01(src="img/contact/plane1.png", width= "100")
-				img.plane.p02(src="img/contact/plane2.png", width= "100")
-				img.plane.p03(src="img/contact/plane3.png", width= "100")
-				img.plane.p04(src="img/contact/plane4.png", width= "100")
-				img.plane.p05(src="img/contact/plane5.png", width= "100")
-				img.plane.p06(src="img/contact/plane6.png", width= "100")
+				img.plane.p01(src="{% get_asset 'img/app_drlogic/contact-plane1' %}", width= "100")
+				img.plane.p02(src="{% get_asset 'img/app_drlogic/contact-plane2' %}", width= "100")
+				img.plane.p03(src="{% get_asset 'img/app_drlogic/contact-plane3' %}", width= "100")
+				img.plane.p04(src="{% get_asset 'img/app_drlogic/contact-plane4' %}", width= "100")
+				img.plane.p05(src="{% get_asset 'img/app_drlogic/contact-plane5' %}", width= "100")
+				img.plane.p06(src="{% get_asset 'img/app_drlogic/contact-plane6' %}", width= "100")
 
 		section.body#main
 			.bend
@@ -32,16 +34,16 @@ block body
 								p
 									a.smooth(href="tel:02036426540").phone
 										span 020 3642 6540
-										img(src="img/contact/phone.png")
+										img(src="{% get_asset 'img/app_drlogic/contact-phone' %}")
 
 								p
 									a.smooth(href="mailto:hello@drlogic.com?Subject=Contact%20From%20Webpage").mail
-										img(src="img/contact/mail.png")
+										img(src="{% get_asset 'img/app_drlogic/contact-mail' %}")
 										span hello@drlogic.com
 
 								p
 									a.smooth(href="#location")
-										img(src="img/contact/sign.png")
+										img(src="{% get_asset 'img/app_drlogic/img/contact-sign' %}")
 										strong London
 										small Exmouth House, 3-11 Pine Street London EC1R 0JH
 
@@ -80,4 +82,4 @@ block body
 			h2 Where to find us
 			section#map
 
-		//- +footer
+		+footer

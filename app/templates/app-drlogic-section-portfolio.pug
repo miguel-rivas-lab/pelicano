@@ -1,7 +1,9 @@
 extends app-drlogic-layout
 include app-drlogic-components.pug
+{% load custom_tags %}
 
 block body
+	//- aside.loader
 	+nav
 
 	section#testimonial
@@ -11,8 +13,8 @@ block body
 				p We’re really lucky to be working with some amazing clients, some who joined us when they were just starting out. We work with Architects, PR companies, Fashion Designers, Landscape Designers, Marketing agencies and even a cookery school. Big or small, if you’ve decided you need better Mac IT support for your business, why not get in touch?
 				.animation-intro
 					.relative-box
-						img(src="img/testimonial/jumping.png").image-resposive.jumping
-						img(src="img/testimonial/hands.png").image-resposive.hands
+						img(src="{% get_asset 'img/app_drlogic/testimonial-jumping' %}").image-resposive.jumping
+						img(src="{% get_asset 'img/app_drlogic/testimonial-hands' %}").image-resposive.hands
 
 		section.body
 			.bend
@@ -25,14 +27,14 @@ block body
 						a(href="#", target="_blank").btn.btn-primary.cyan.apple-reviews
 							span Reviews
 
-					article.speech-ballon(class="left-tail yellow active" )
+					article.speech-ballon(class="left-tail yellow active")
 						.preview
 							button.open-pixel-modal
-								img(src="img/clients/logo-06.png").logo
+								img(src="{% get_asset 'img/app_drlogic/clients-logo-06' %}").logo
 						.pixel-modal
 							button.fa.fa-times.close-pixel-modal(type="button")
 							.pixel-modal-body
-								img(src="img/clients/logo-06.png").logo-min
+								img(src="{% get_asset 'img/app_drlogic/clients-logo-06' %}").logo-min
 								.fix-text
 									p Insanity Artists was established in 2003 and has become the UKs largest live agency exclusively representing DJ and PA talent from the areas of music, fashion, television and radio. Their clients include: Shayne Ward, Sarah Harding, Gareth Gates & 5ive.
 									p At Insanity, we use Macs pretty much across the board to run our business.  Our clients have high expectations and when you’re working internationally, you can’t afford to have email go down, or a laptop out of action – it could mean losing a vital booking – or worse a client.
@@ -42,5 +44,5 @@ block body
 									p It’s better than my own Doctor!
 									small Matt Wynter, Insanity Artists
 
-	//- +call-us
-	//- +footer
+		+call-us
+		+footer

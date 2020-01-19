@@ -13,7 +13,7 @@ urlpatterns = [
 	# ----------- B
 	# ----------- C
 	# ----------- D
-	url(get_path('drlogic', ''), views.drlogic_home),
+	# url(get_path('drlogic', ''), views.drlogic_home),
 	url(get_path('drlogic', 'home'), views.drlogic_home),
 	url(get_path('drlogic', 'about'), views.drlogic_about),
 	url(get_path('drlogic', 'services'), views.drlogic_services),
