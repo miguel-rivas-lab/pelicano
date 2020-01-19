@@ -1,10 +1,4 @@
-mixin put-img(image, classes, ext="png")
-	img(src="http://127.0.0.1:8080/static/img/app_drlogic/#{image}.#{ext}", class=classes)
-
-mixin link-doc(doc, classes)
-	a(href="http://127.0.0.1:8080/static/docs/#{doc}", class=classes)
-		p Terms & Conditions
-		span.fa.fa-book
+{% load custom_tags %}
 
 mixin nav(color)
 	nav#nav.navbar.navbar-default(class=color)
@@ -21,8 +15,8 @@ mixin nav(color)
 					span.icon-bar
 					span.icon-bar
 				a.navbar-brand(href="home")
-					+put-img("logo-drlogic", "hidden-xs")
-					+put-img("logo-drlogic-white", "visible-xs")
+					img.hidden-xs(src="{% get_asset 'img/app_drlogic/logo-drlogic' %}")
+					img.visible-xs(src="{% get_asset 'img/app_drlogic/logo-drlogic-white' %}")
 			#navbar.navbar-collapse.collapse
 				ul.nav.navbar-nav.navbar-main.navbar-right
 					li: a.nav-link(href="home") Home
@@ -51,7 +45,7 @@ mixin call-us(color)
 						or Get in Touch With Us
 						a.phone(href="tel:02036426540") 020 3642 6540
 				.col-md-6
-					+put-img("mac-help", "preview")
+					img.preview(src="{% get_asset 'img/app_drlogic/mac-help' %}")
 
 
 mixin footer
@@ -68,14 +62,15 @@ mixin footer
 					p Exmouth House 3-11 Pine Street London EC1R 0JH
 					hr
 					.lenker
-						+put-img("logos-footer-exponentiale", "image-responsive logo exponentiale")
-						+put-img("logos-footer-apple", "image-responsive logo apple")
-						+put-img("logos-footer-google", "image-responsive logo google")
-						+put-img("logos-footer-casper", "image-responsive logo casper")
-						+put-img("logos-footer-meraki", "image-responsive logo meraki")
+						img.image-responsive.logo(src="{% get_asset 'img/app_drlogic/logos-footer-exponentiale' %}").exponentiale
+						img.image-responsive.logo(src="{% get_asset 'img/app_drlogic/logos-footer-apple' %}").apple
+						img.image-responsive.logo(src="{% get_asset 'img/app_drlogic/logos-footer-casper' %}").casper
+						img.image-responsive.logo(src="{% get_asset 'img/app_drlogic/logos-footer-meraki' %}").meraki
 					hr
 					small © Copyright 2016 Dr Logic. All rights reserved.
 					small Dr Logic is a registered trademark of Doctor Logic Ltd.
 					small Registered in England and Wales. Company no. 4947299. VAT no. 848448189.
 
-					+link-doc("terms.pdf", "terms")
+					a.terms(href="{% get_asset 'docs/terms' 'pdf' %}")
+						p Terms & Conditions
+						span.fa.fa-book

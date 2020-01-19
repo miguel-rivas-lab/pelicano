@@ -2,7 +2,7 @@ const path = require('path');
 // var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const dir = {
-	static: path.resolve(__dirname, 'static'),
+	static: path.resolve(__dirname, 'app/static'),
 	build: path.resolve(__dirname, 'dist')
 };
 
