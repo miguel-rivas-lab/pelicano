@@ -1,0 +1,12 @@
+doctype html
+html(lang='en')
+	head
+		= render(partial: "partials/metadata")
+		= csrf_meta_tags
+		= csp_meta_tag
+		= stylesheet_pack_tag('app_drlogic', media: 'all', 'data-turbolinks-track': 'reload')
+		meta(property="og:image" content="http://miguelrivas.me/img/portfolio.png")
+	body
+		/ aside.loader
+		= yield
+		= javascript_pack_tag('app_drlogic', 'data-turbolinks-track': 'reload')
