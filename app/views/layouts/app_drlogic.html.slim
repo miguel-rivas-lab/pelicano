@@ -5,8 +5,9 @@ html(lang='en')
 		= csrf_meta_tags
 		= csp_meta_tag
 		= stylesheet_pack_tag('app_drlogic', media: 'all', 'data-turbolinks-track': 'reload')
+		= javascript_pack_tag('app_drlogic', 'data-turbolinks-track': 'reload')
 		meta(property="og:image" content="http://miguelrivas.me/img/portfolio.png")
 	body
-		/ aside.loader
+		aside.loader
 		= yield
-		= javascript_pack_tag('app_drlogic', 'data-turbolinks-track': 'reload')
+		

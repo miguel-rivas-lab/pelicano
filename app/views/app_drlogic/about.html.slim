@@ -21,7 +21,7 @@ section#about-us
 					p We’re members of the lovely Apple Consultants Network, a community of professional service providers specialising in both Apple and third-party solutions. Our senior staff are Apple & Casper certified technicians and Dr Logic is a member of the Service Desk Institute. Last but not least, we are also Meraki and Google Apps for Work certified partners.
 
 				article.people.red
-					img(src="{% get_asset '' %}", width: "250")
+					/ = image_tag(image_path(''), width: '250')
 					.description
 						h3 Roman Marszalek
 						h4 Managing Director
@@ -40,5 +40,5 @@ section#about-us
 								strong First Record:
 							| Bobby Brown - Don’t be Cruel
 
-	+call-us
-	+footer
+	= render(partial: "partials/app_drlogic/call_us", locals: {color: 'yellow'})
+	= render(partial: "partials/app_drlogic/footer")
