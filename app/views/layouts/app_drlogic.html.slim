@@ -7,7 +7,7 @@ html(lang='en')
 		= stylesheet_pack_tag('app_drlogic', media: 'all', 'data-turbolinks-track': 'reload')
 		= javascript_pack_tag('app_drlogic', 'data-turbolinks-track': 'reload')
 		meta(property="og:image" content="http://miguelrivas.me/img/portfolio.png")
-	body
+	body(class=section_class)
 		aside.loader
 		= yield
 		
