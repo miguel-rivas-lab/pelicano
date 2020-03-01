@@ -18,13 +18,13 @@ nav#nav.navbar.navbar-default(class=color)
 			ul.nav.navbar-nav.navbar-main.navbar-right
 				li = link_to("Home", "home", class: ['nav-link'])
 				li = link_to("About Us", "about", class: ['nav-link'])
-				li.dropdown
-					= link_to("#", class: ['dropdown-toggle'], role: 'button', data: { toggle: 'dropdown'})
-						| Services
-						span.caret
-					ul.dropdown-menu
-						li = link_to("Mac Support", "#")
-						li = link_to("Other Services", "#")
+				/ li.dropdown
+				/ 	= link_to("#", class: ['dropdown-toggle'], role: 'button', data: { toggle: 'dropdown'})
+				/ 		| Services
+				/ 		span.caret
+				/ 	ul.dropdown-menu
+				/ 		li = link_to("Mac Support", "#")
+				/ 		li = link_to("Other Services", "#")
 				li = link_to("Portfolio", "portfolio", class: ['nav-link'])
 				li = link_to("Contact Us", "contact", class: ['nav-link'])
 				li = link_to("Error 404", "404", class: ['nav-link'])

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 	resources :app_drlogic do
 		collection do
+			get 'home', to: redirect('/app_drlogic')
 			get 'about'
 			get 'contact'
 			get 'portfolio'
