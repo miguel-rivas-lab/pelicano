@@ -8,4 +8,9 @@ Rails.application.routes.draw do
 			get '404'
 		end
 	end
+
+	resources :app_skills do
+		collection do
+		end
+	end
 end
