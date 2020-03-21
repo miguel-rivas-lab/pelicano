@@ -25,8 +25,12 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+gem 'geocoder'
+gem 'gmaps4rails'
+gem 'underscore-rails'
+
 gem 'react-rails'
-gem "slim-rails"
+gem 'slim-rails'
 gem 'jquery-rails'
 # gem 'bootstrap', '~> 4.3.1'
 
