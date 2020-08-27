@@ -5,7 +5,10 @@ ruby '2.7.1'
 
 # ----- apps:begin
 gem 'bucaro', path: '../bucaro'
+gem 'colibri', path: '../colibri'
 gem 'guinea', path: '../guinea'
+gem 'paloma', path: '../paloma'
+gem 'pavo', path: '../pavo'
 # ----- apps:end
 
 gem 'sprockets-rails', '2.3.3'
@@ -15,8 +18,8 @@ gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0' 
 gem 'bootsnap', '>= 1.4.2', require: false
-# gem 'turbolinks', '~> 5'
-# gem 'jbuilder', '~> 2.7'
+gem 'turbolinks', '~> 5'
+gem 'jbuilder', '~> 2.7'
 
 group :development do
   gem 'listen', '~> 3.2'
