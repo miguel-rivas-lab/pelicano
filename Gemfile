@@ -4,11 +4,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.1'
 
 # ----- apps:begin
-gem 'bucaro', path: '../bucaro'
-gem 'guinea', path: '../guinea'
-gem 'colibri', path: '../colibri'
-gem 'paloma', path: '../paloma'
-gem 'pavo', path: '../pavo'
+gem 'bucaro', path: 'gems/bucaro'
+gem 'guinea', path: 'gems/guinea'
+gem 'colibri', path: 'gems/colibri'
+gem 'paloma', path: 'gems/paloma'
+gem 'pavo', path: 'gems/pavo'
 # ----- apps:end
 
 gem 'sprockets-rails', '2.3.3'

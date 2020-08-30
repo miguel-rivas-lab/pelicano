@@ -1,0 +1,15 @@
+[submodule "gems/bucaro"]
+	path = gems/bucaro
+	url = https://github.com/planetwurlex/bucaro
+[submodule "gems/pavo"]
+	path = gems/pavo
+	url = https://github.com/planetwurlex/pavo
+[submodule "gems/colibri"]
+	path = gems/colibri
+	url = https://github.com/planetwurlex/colibri
+[submodule "gems/paloma"]
+	path = gems/paloma
+	url = https://github.com/planetwurlex/paloma
+[submodule "gems/guinea"]
+	path = gems/guinea
+	url = git@github.com:planetwurlex/guinea.git

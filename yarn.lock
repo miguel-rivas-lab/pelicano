@@ -1604,7 +1604,7 @@ browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.6.4, browserslist@^4.
     escalade "^3.0.2"
     node-releases "^1.1.60"
 
-"bucaro@file:../bucaro":
+"bucaro@file:gems/bucaro":
   version "3.0.0"
 
 buffer-from@^1.0.0:
@@ -1894,10 +1894,10 @@ code-point-at@^1.0.0:
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
-"colibri@file:../colibri":
+"colibri@file:gems/colibri":
   version "0.0.1"
   dependencies:
-    bucaro "file:../../.cache/yarn/v6/npm-colibri-0.0.1-5bd437c6-460b-4b24-a469-156bb045f13c-1598805381898/node_modules/bucaro"
+    bucaro "file:../../.cache/yarn/v6/npm-colibri-0.0.1-34a248db-abcd-4b9e-a500-f37e418fdb00-1598828116053/node_modules/bucaro"
 
 collection-visit@^1.0.0:
   version "1.0.0"
@@ -3276,10 +3276,10 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.2.2
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.4.tgz#2256bde14d3632958c465ebc96dc467ca07a29fb"
   integrity sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
 
-"guinea@file:../guinea":
+"guinea@file:gems/guinea":
   version "0.0.1"
   dependencies:
-    bucaro "file:../../.cache/yarn/v6/npm-guinea-0.0.1-cea292b4-573e-4a34-ab71-1746a4de03f8-1598805381900/node_modules/bucaro"
+    bucaro "file:../../.cache/yarn/v6/npm-guinea-0.0.1-84185e22-6f11-4b08-bab4-f2c9d693d6bb-1598828116056/node_modules/bucaro"
 
 handle-thing@^2.0.0:
   version "2.0.1"
@@ -4929,10 +4929,10 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
-"paloma@file:../paloma":
+"paloma@file:gems/paloma":
   version "0.0.1"
   dependencies:
-    bucaro "file:../../.cache/yarn/v6/npm-paloma-0.0.1-09ec3e2a-6d5f-44a8-9e9d-a1c0a8365129-1598805381904/node_modules/bucaro"
+    bucaro "file:../../.cache/yarn/v6/npm-paloma-0.0.1-d6286f96-43e9-4f31-b01b-570f0aa3ee9f-1598828116059/node_modules/bucaro"
 
 parallel-transform@^1.1.0:
   version "1.2.0"
@@ -5072,10 +5072,10 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-"pavo@file:../pavo":
+"pavo@file:gems/pavo":
   version "0.0.1"
   dependencies:
-    bucaro "file:../../.cache/yarn/v6/npm-pavo-0.0.1-d0c2755c-077e-489d-872c-09708b3e40cf-1598805381907/node_modules/bucaro"
+    bucaro "file:../../.cache/yarn/v6/npm-pavo-0.0.1-c0aeb142-af8f-49d9-a11a-12fae7cfaa84-1598828116061/node_modules/bucaro"
 
 pbkdf2@^3.0.3:
   version "3.1.1"
@@ -7158,9 +7158,9 @@ upath@^1.1.1:
   integrity sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==
 
 uri-js@^4.2.2:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.3.0.tgz#e16cb9ef7b4036d74be59dc7342258e6f1aca20e"
-  integrity sha512-Q9Q9RlMM08eWfdPPmDDrXd8Ny3R1sY/DaRDR2zTPPneJ6GYiLx3++fPiZobv49ovkYAnHl/P72Ie3HWXIRVVYA==
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.4.0.tgz#aa714261de793e8a82347a7bcc9ce74e86f28602"
+  integrity sha512-B0yRTzYdUCCn9n+F4+Gh4yIDtMQcaJsmYBDsTSG8g/OejKBodLQ2IHfN3bM7jUsRXndopT7OIXWdYqc1fjmV6g==
   dependencies:
     punycode "^2.1.0"
 

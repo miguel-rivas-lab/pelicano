@@ -1,5 +1,5 @@
 PATH
-  remote: ../bucaro
+  remote: gems/bucaro
   specs:
     bucaro (3.0.0)
       rails
@@ -7,7 +7,7 @@ PATH
       slim-rails
 
 PATH
-  remote: ../colibri
+  remote: gems/colibri
   specs:
     colibri (0.0.1)
       haml-rails
@@ -15,7 +15,7 @@ PATH
       sass-rails
 
 PATH
-  remote: ../guinea
+  remote: gems/guinea
   specs:
     guinea (0.0.1)
       rails
@@ -23,7 +23,7 @@ PATH
       slim-rails
 
 PATH
-  remote: ../paloma
+  remote: gems/paloma
   specs:
     paloma (0.0.1)
       jquery-rails
@@ -32,7 +32,7 @@ PATH
       slim-rails
 
 PATH
-  remote: ../pavo
+  remote: gems/pavo
   specs:
     pavo (0.0.1)
       jquery-rails
