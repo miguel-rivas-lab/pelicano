@@ -7,12 +7,15 @@
 		"@rails/ujs": "^6.0.0",
 		"@rails/webpacker": "4.2.2",
 		"bucaro": "file:../bucaro",
+		"colibri": "file:../colibri",
+		"guinea": "file:../guinea",
 		"jquery": "^3.5.1",
+		"paloma": "file:../paloma",
+		"pavo": "file:../pavo",
 		"turbolinks": "^5.2.0"
 	},
 	"version": "0.1.0",
 	"devDependencies": {
-		"font-awesome-sass": "4.7.0",
 		"webpack-dev-server": "^3.11.0"
 	}
 }

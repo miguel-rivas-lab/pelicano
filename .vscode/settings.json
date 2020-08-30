@@ -1,0 +1,22 @@
+{
+	"[ruby]": {
+		"editor.defaultFormatter": "rebornix.ruby"
+	},
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 2,
+	"editor.formatOnSave": true,
+	"standard.autoFixOnSave": true,
+	"ruby.format": "standard",
+	"emmet.includeLanguages": {
+		"erb": "html"
+	},
+	"workbench.colorCustomizations": {
+		"editorWhitespace.foreground": "#8a50cc",
+		"activityBar.background": "#b83f86",
+		"activityBar.foreground": "#ffffff",
+		"activityBar.inactiveForeground": "#ffffff75",
+		"activityBar.activeBorder": "#ffffff60",
+		"activityBar.activeBackground": "#ffffff00",
+	}
+}

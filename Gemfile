@@ -5,8 +5,8 @@ ruby '2.7.1'
 
 # ----- apps:begin
 gem 'bucaro', path: '../bucaro'
-gem 'colibri', path: '../colibri'
 gem 'guinea', path: '../guinea'
+gem 'colibri', path: '../colibri'
 gem 'paloma', path: '../paloma'
 gem 'pavo', path: '../pavo'
 # ----- apps:end
