@@ -22,7 +22,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 
 group :development do
-  gem 'listen', '~> 3.2'
+	gem 'listen', '~> 3.2'
 #   gem 'web-console', '>= 3.3.0'
 #   gem 'spring'
 #   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -33,10 +33,10 @@ end
 # end
 
 group :test do
-  gem 'capybara', '>= 2.15'
+	gem 'capybara', '>= 2.15'
 	gem 'cucumber'
-  gem 'selenium-webdriver'
-  gem 'webdrivers'
+	gem 'selenium-webdriver'
+	gem 'webdrivers'
 end
 
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
