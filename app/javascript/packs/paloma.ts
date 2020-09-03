@@ -1,4 +1,6 @@
-const imagesPaloma = require['context']('paloma/app/assets/images', true);
 import 'jquery';
-import 'paloma/app/assets/stylesheets/paloma/application.scss';
-import 'paloma/app/assets/javascripts/paloma/application.ts';
+import 'bucaro/js/vendor/bootstrap_3.3.7';
+
+require['context']('paloma/app/assets/images', true);
+import 'paloma/app/assets/javascripts/paloma/application';
+import './paloma.scss';

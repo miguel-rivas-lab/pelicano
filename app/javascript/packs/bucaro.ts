@@ -1,5 +1,6 @@
-const imagesBucaro = require['context']('bucaro/app/assets/images', true);
 import 'jquery';
 import 'bucaro/js/vendor/TweenMax.min.js';
-import 'bucaro/app/assets/stylesheets/bucaro/application.scss';
-import 'bucaro/app/assets/javascripts/bucaro/application.ts';
+
+require['context']('bucaro/app/assets/images', true);
+import 'bucaro/app/assets/javascripts/bucaro/application';
+import './bucaro.scss';
