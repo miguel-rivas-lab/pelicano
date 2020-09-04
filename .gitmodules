@@ -13,3 +13,6 @@
 [submodule "gems/guinea"]
 	path = gems/guinea
 	url = git@github.com:planetwurlex/guinea.git
+[submodule "gems/papagayo"]
+	path = gems/papagayo
+	url = https://github.com/miguel-rivas/papagayo.git

@@ -9,6 +9,7 @@ gem 'guinea', path: 'gems/guinea'
 gem 'colibri', path: 'gems/colibri'
 gem 'paloma', path: 'gems/paloma'
 gem 'pavo', path: 'gems/pavo'
+gem 'papagayo', path: 'gems/papagayo'
 # ----- apps:end
 
 gem 'sprockets-rails', '2.3.3'

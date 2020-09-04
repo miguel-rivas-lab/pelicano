@@ -32,10 +32,17 @@ PATH
       slim-rails
 
 PATH
+  remote: gems/papagayo
+  specs:
+    papagayo (0.0.1)
+      rails
+      sass-rails
+      slim-rails
+
+PATH
   remote: gems/pavo
   specs:
     pavo (0.0.1)
-      jquery-rails
       rails
       sass-rails
       slim-rails
@@ -314,6 +321,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.2)
   paloma!
+  papagayo!
   pavo!
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)

@@ -13,7 +13,7 @@
 	},
 	"workbench.colorCustomizations": {
 		"editorWhitespace.foreground": "#8a50cc",
-		"activityBar.background": "#b83f86",
+		"activityBar.background": "#512ca7",
 		"activityBar.foreground": "#ffffff",
 		"activityBar.inactiveForeground": "#ffffff75",
 		"activityBar.activeBorder": "#ffffff60",

@@ -11,6 +11,7 @@
 		"guinea": "file:gems/guinea",
 		"jquery": "^3.5.1",
 		"paloma": "file:gems/paloma",
+		"papagayo": "file:gems/papagayo",
 		"pavo": "file:gems/pavo",
 		"turbolinks": "^5.2.0"
 	},
