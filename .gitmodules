@@ -1,18 +1,18 @@
 [submodule "gems/bucaro"]
 	path = gems/bucaro
-	url = https://github.com/planetwurlex/bucaro
+	url = git@github.com:miguel-rivas/bucaro.git
 [submodule "gems/pavo"]
 	path = gems/pavo
-	url = https://github.com/planetwurlex/pavo
+	url = git@github.com:miguel-rivas/pavo.git
 [submodule "gems/colibri"]
 	path = gems/colibri
-	url = https://github.com/planetwurlex/colibri
+	url = git@github.com:miguel-rivas/colibri.git
 [submodule "gems/paloma"]
 	path = gems/paloma
-	url = https://github.com/planetwurlex/paloma
+	url = git@github.com:miguel-rivas/paloma.git
 [submodule "gems/guinea"]
 	path = gems/guinea
-	url = git@github.com:planetwurlex/guinea.git
+	url = git@github.com:miguel-rivas/guinea.git
 [submodule "gems/papagayo"]
 	path = gems/papagayo
-	url = https://github.com/miguel-rivas/papagayo.git
+	url = git@github.com:miguel-rivas/pelicano.git
