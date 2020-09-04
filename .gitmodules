@@ -15,4 +15,4 @@
 	url = git@github.com:miguel-rivas/guinea.git
 [submodule "gems/papagayo"]
 	path = gems/papagayo
-	url = git@github.com:miguel-rivas/pelicano.git
+	url = git@github.com:miguel-rivas/papagayo.git
