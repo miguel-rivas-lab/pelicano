@@ -2575,9 +2575,9 @@ domutils@^1.7.0:
     domelementtype "1"
 
 dot-prop@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.2.0.tgz#c34ecc29556dc45f1f4c22697b6f4904e0cc4fcb"
-  integrity sha512-uEUyaDKoSQ1M4Oq8l45hSE26SnTxL6snNnqvK/VWx5wJhmff5z0FUVJDKDanor/6w3kzE3i7XZOk+7wC0EXr1A==
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.3.0.tgz#90ccce708cd9cd82cc4dc8c3ddd9abdd55b20e88"
+  integrity sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==
   dependencies:
     is-obj "^2.0.0"
 
@@ -4933,12 +4933,12 @@ pako@~1.0.5:
 "paloma@file:gems/paloma":
   version "0.0.1"
   dependencies:
-    bucaro "file:../../.cache/yarn/v6/npm-paloma-0.0.1-59349044-682f-42d3-8fcb-23207ecd0fa0-1599385610504/node_modules/bucaro"
+    bucaro "file:../../.cache/yarn/v6/npm-paloma-0.0.1-0ae34be4-d128-41ca-aff2-cc9bf0b3dc34-1599507039901/node_modules/bucaro"
 
 "papagayo@file:gems/papagayo":
   version "0.0.1"
   dependencies:
-    bucaro "file:../../.cache/yarn/v6/npm-papagayo-0.0.1-103bb3c6-9c7c-4e9f-8d1c-bf765d1456df-1599385610516/node_modules/bucaro"
+    bucaro "file:../../.cache/yarn/v6/npm-papagayo-0.0.1-7c48b107-838b-4eb3-a48f-8f1b16eb40f7-1599507039903/node_modules/bucaro"
 
 parallel-transform@^1.1.0:
   version "1.2.0"
