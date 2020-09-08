@@ -4933,12 +4933,12 @@ pako@~1.0.5:
 "paloma@file:gems/paloma":
   version "0.0.1"
   dependencies:
-    bucaro "file:../../.cache/yarn/v6/npm-paloma-0.0.1-610a99cd-b02f-4e30-947c-a209404bab68-1599545034203/node_modules/bucaro"
+    bucaro "file:../../.cache/yarn/v6/npm-paloma-0.0.1-978711b8-b7ab-4b03-8d8d-a88075f46542-1599545539095/node_modules/bucaro"
 
 "papagayo@file:gems/papagayo":
   version "0.0.1"
   dependencies:
-    bucaro "file:../../.cache/yarn/v6/npm-papagayo-0.0.1-7b3df380-5b82-4f1b-a425-f3ac411a8b5a-1599545034205/node_modules/bucaro"
+    bucaro "file:../../.cache/yarn/v6/npm-papagayo-0.0.1-0ccd76e1-149d-412d-93e0-529bb7f64a78-1599545539097/node_modules/bucaro"
 
 parallel-transform@^1.1.0:
   version "1.2.0"
