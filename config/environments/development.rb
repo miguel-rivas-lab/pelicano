@@ -9,10 +9,6 @@ Rails.application.configure do
 	# Do not eager load code on boot.
 	config.eager_load = false
 
-	# Show full error reports.
-	config.consider_all_requests_local = false
-	# config.consider_all_requests_local = true
-
 	# Enable/disable caching. By default caching is disabled.
 	# Run rails dev:cache to toggle caching.
 	if Rails.root.join('tmp', 'caching-dev.txt').exist?
@@ -53,12 +49,19 @@ Rails.application.configure do
 
 	# Suppress logger output for asset requests.
 	config.assets.quiet = true
-	config.hosts = "miguelrivas.me"
-
+	
 	# Raises error for missing translations.
 	# config.action_view.raise_on_missing_translations = true
-
+	
 	# Use an evented file watcher to asynchronously detect changes in source code,
 	# routes, locales, etc. This feature depends on the listen gem.
 	config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+	
+	# ----------------- Deployment: true
+	# Show full error reports.
+	config.consider_all_requests_local = false
+	config.hosts = "miguelrivas.me"
+
+	# ----------------- Deployment: false
+	# config.consider_all_requests_local = true
 end
