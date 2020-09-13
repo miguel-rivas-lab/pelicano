@@ -1,5 +1,11 @@
 Feature: Links
+	Background:
+		# Given I release the birds
+		Given I start Firefox with XGA
+		And I navigate to "Guinea"
+
 	Scenario: Links on Portfolio's Home
-		Given I am on "Home" Screen
 		And I check each home gallery link:
-			| "DrLogic / About Us" | colibri |
+			| "Walking" | colibri |
+		# | "DrLogic / About Us" | colibri |
+		And wait for keypress

@@ -60,7 +60,7 @@ Rails.application.configure do
 	# ----------------- Deployment: true
 	# Show full error reports.
 	config.consider_all_requests_local = false
-	config.hosts = "miguelrivas.me"
+	config.hosts = ["rails.miguelrivas.me", "miguelrivas.me", "localhost"]
 
 	# ----------------- Deployment: false
 	# config.consider_all_requests_local = true

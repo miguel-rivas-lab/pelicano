@@ -1,0 +1,8 @@
+INTEGER = '(\d+)'
+FLOAT = '(\d+\.\d+)'
+QUOTED_STRING = '"([^"]*)"'
+STRING = '([^"]*)'
+ANYTHING = '(.*?)'
+DURATION = '(\d+(?:\.\d+)?)'
+BROWSER = '(Firefox|Chrome|Safari)'
+SCREEN_SIZE = '(VGA|XGA|FHD)'

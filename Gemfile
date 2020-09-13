@@ -24,20 +24,13 @@ gem 'jbuilder', '~> 2.7'
 
 group :development do
 	gem 'listen', '~> 3.2'
-#   gem 'web-console', '>= 3.3.0'
-#   gem 'spring'
-#   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
-# group :development, :test do
-#   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-# end
 
 group :test do
 	gem 'capybara', '>= 2.15'
-	gem 'cucumber'
+	gem 'cucumber-rails'
 	gem 'selenium-webdriver'
 	gem 'webdrivers'
+	# gem 'rspec'
+	# gem 'rspec-rails'
 end
-
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
