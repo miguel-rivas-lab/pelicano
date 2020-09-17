@@ -7,6 +7,7 @@
 		"@rails/ujs": "^6.0.0",
 		"@rails/webpacker": "4.2.2",
 		"bucaro": "file:gems/bucaro",
+		"canario": "file:gems/canario",
 		"colibri": "file:gems/colibri",
 		"guinea": "file:gems/guinea",
 		"jquery": "^3.5.1",

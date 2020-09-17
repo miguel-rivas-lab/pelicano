@@ -10,6 +10,7 @@ gem 'colibri', path: 'gems/colibri'
 gem 'paloma', path: 'gems/paloma'
 gem 'pavo', path: 'gems/pavo'
 gem 'papagayo', path: 'gems/papagayo'
+gem 'canario', path: 'gems/canario'
 # ----- apps:end
 
 gem 'sprockets-rails', '2.3.3'
@@ -24,6 +25,8 @@ gem 'jbuilder', '~> 2.7'
 
 group :development do
 	gem 'listen', '~> 3.2'
+	gem 'rspec'
+	gem 'rspec-rails'
 end
 
 group :test do

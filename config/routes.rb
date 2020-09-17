@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 	mount Pavo::Engine, at: "/"
 	mount Colibri::Engine, at: "/"
 	mount Papagayo::Engine, at: "/"
+	mount Canario::Engine, at: "/"
 
 	get '*unmatched_route', to: 'application#raise_not_found'
 end

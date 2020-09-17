@@ -16,3 +16,6 @@
 [submodule "gems/papagayo"]
 	path = gems/papagayo
 	url = git@github.com:miguel-rivas/papagayo.git
+[submodule "gems/canario"]
+	path = gems/canario
+	url = https://github.com/miguel-rivas/canario.git

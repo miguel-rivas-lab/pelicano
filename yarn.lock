@@ -1748,6 +1748,11 @@ camelcase@^5.0.0, camelcase@^5.3.1:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
+"canario@file:gems/canario":
+  version "0.0.1"
+  dependencies:
+    bucaro "file:../../.cache/yarn/v6/npm-canario-0.0.1-6b66a894-9ca1-4df6-8402-c9fde4fd1d44-1600318624710/node_modules/bucaro"
+
 caniuse-api@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/caniuse-api/-/caniuse-api-3.0.0.tgz#5e4d90e2274961d46291997df599e3ed008ee4c0"
@@ -4933,12 +4938,12 @@ pako@~1.0.5:
 "paloma@file:gems/paloma":
   version "0.0.1"
   dependencies:
-    bucaro "file:../../.cache/yarn/v6/npm-paloma-0.0.1-7f2bbbba-6999-434a-b31d-67dde02a6a92-1599638652389/node_modules/bucaro"
+    bucaro "file:../../.cache/yarn/v6/npm-paloma-0.0.1-ec37c6d0-846f-4de9-8405-d817ea4e77d9-1600318624605/node_modules/bucaro"
 
 "papagayo@file:gems/papagayo":
   version "0.0.1"
   dependencies:
-    bucaro "file:../../.cache/yarn/v6/npm-papagayo-0.0.1-627eab3e-e61d-42f1-a97b-e7f5796565cb-1599638652391/node_modules/bucaro"
+    bucaro "file:../../.cache/yarn/v6/npm-papagayo-0.0.1-3814fd57-678c-4b92-be5e-c28cd0576748-1600318624614/node_modules/bucaro"
 
 parallel-transform@^1.1.0:
   version "1.2.0"
