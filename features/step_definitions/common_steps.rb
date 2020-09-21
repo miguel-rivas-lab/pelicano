@@ -1,3 +1,4 @@
+# require 'capybara/rspec'
 driver = nil
 server_path = 'http://localhost:9030'
 
@@ -16,7 +17,7 @@ Given(/^I start #{BROWSER}(?: with #{SCREEN_SIZE})/) do |browser, screen_size|
 		}
 		size = sizes[screen_size.upcase.to_sym]
 		driver.manage.window.resize_to(size[:width],size[:height])
-		driver.manage.window.move_to(0,0)
+		# driver.manage.window.move_to(0,0)
 	end
 end
 
